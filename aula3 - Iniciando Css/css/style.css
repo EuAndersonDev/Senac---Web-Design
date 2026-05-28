@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    /*O margin afasta outras coisas do componente*/
+    padding: 0;
+    /*O padding afasta as coisas dentro do componente*/
+    box-sizing: border-box;
+    /*Impede que o margin e o padding não deixem passa para fora as coisas*/
+}
+
+body {
+    /*  */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(31, 146, 208);
+}
+
+header {
+    width: 80vw;
+    height: 30vh;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+#nomeEmpresa {
+    color: rgb(0, 0, 0);
+    font-size: 54px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.link_navbar {
+    display: block;
+    color: #1a45e2;
+    text-decoration: none;
+    padding: 20px;
+    transition: all ease-in-out 0.5s;
+    transform: translateX(-2px) translateY(-2px);
+    border-radius: 15px;
+}
+
+.link_navbar:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all ease-in-out 0.5s;
+    transform: translateX(2px) translateY(2px);
+    cursor: pointer;
+}
+
+.container {
+    width: 80vw;
+    /*Largura*/
+    height: 80vh;
+    /*Altura*/
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    /*Cor do texto*/
+    line-height: 3.6;
+    /*Espaçamento de linha*/
+    /*  
+        px, rem, em, %, vw, vh 
+    */
+}
