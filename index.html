@@ -1,57 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoTrilhas - Turismo de Aventura</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Portal de Aulas SENAC - Web Design</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <h1 id="nomeEmpresa">EcoTrilhas</h1>
-        <p>Sua próxima aventura começa aqui.</p>
-        
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html" class="link_navbar">Início</a></li>
-                <li><a href="parceiros.html" class="link_navbar">Parceiros</a></li>
-                <li><a href="contato.html" class="link_navbar">Contato</a></li>
-                <li><a href="quemSomos.html" class="link_navbar">Sobre Nós</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="page-width">
+            <div>
+                <span class="badge">Projeto SENAC</span>
+                <h1>Portal de Aulas Web Design</h1>
+                <p>Um índice atualizado constantemente com os exemplos e conteúdos de cada aula.</p>
+            </div>
+            <nav class="main-nav">
+                <a href="#aulas">Aulas</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <!--Inicio da sessão principal  -->
-        <section class="container">
-            <h2>Próximas Expedições</h2>
-            
-            <article>
-                <h3>Trilha da Cachoeira Esmeralda</h3>
-                
-                <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=600" 
-                alt="Grupo de três pessoas com mochilas caminhando em uma trilha de terra cercada por floresta 
-                verdejante em um dia ensolarado.">
-    
-                <p>Explore as paisagens mais intocadas da nossa região com guias certificados 
-                    pelo Ministério do Turismo. Vagas limitadas para o próximo sábado.</p>
-                <p><strong>Dificuldade:</strong> Moderada | <strong>Duração:</strong> 4 horas</p>
+    <main class="page-width">
+        <section class="hero">
+            <h2>Bem-vindo ao seu site de estudos</h2>
+            <p>Aqui você encontra os exemplos práticos de cada aula e uma visão rápida do conteúdo trabalhado.</p>
+        </section>
+
+        <section id="aulas" class="cards-grid">
+            <article class="card">
+                <h3>Aula 1 - HTML Básico</h3>
+                <p>Introdução à estrutura de um documento HTML e criação de páginas simples.</p>
+                <div class="links-row">
+                    <a class="button" href="aula1/index.html">Exemplo 1</a>
+                    <a class="button" href="aula1/pagina2.html">Exemplo 2</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>Aula 2 - Navegação e Conteúdo</h3>
+                <p>Construção de páginas de site com navegação entre conteúdos como contato e parceiros.</p>
+                <div class="links-row">
+                    <a class="button" href="aula2/index.html">Início</a>
+                    <a class="button" href="aula2/contato.html">Contato</a>
+                    <a class="button" href="aula2/parceiros.html">Parceiros</a>
+                    <a class="button" href="aula2/quemSomos.html">Quem Somos</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>Aula 3 - Iniciando CSS</h3>
+                <p>Aplicação de estilos em páginas HTML e uso de CSS externo para design visual.</p>
+                <div class="links-row">
+                    <a class="button" href="aula3%20-%20Iniciando%20Css/index.html">Início</a>
+                    <a class="button" href="aula3%20-%20Iniciando%20Css/parceiros.html">Parceiros</a>
+                    <a class="button" href="aula3%20-%20Iniciando%20Css/quemSomos.html">Quem Somos</a>
+                    <a class="button" href="aula3%20-%20Iniciando%20Css/contato.html">Contato</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>Aula 4 - Position Absolute</h3>
+                <p>Exemplos de posicionamento absoluto para elementos na página e como manipular camadas.</p>
+                <div class="links-row">
+                    <a class="button" href="aula4%20-%20Position%20Absolut/index.html">Exemplo</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>Aula 5 - Position Relative</h3>
+                <p>Prática de posicionamento relativo e exemplos de layout com elementos deslocados.</p>
+                <div class="links-row">
+                    <a class="button" href="aula5%20-%20Position%20Relative/index.html">Página principal</a>
+                    <a class="button" href="aula5%20-%20Position%20Relative/Exemplo/index.html">Exemplo</a>
+                </div>
             </article>
         </section>
 
-        <aside>
-            <h3>Avisos Importantes</h3>
+        <section id="sobre" class="section-panel">
+            <h2>Sobre este portal</h2>
+            <p>Este site reúne os principais conteúdos das aulas de Web Design e serve como página inicial para deploy na Vercel.</p>
+            <p>O índice será mantido atualizado sempre que houver novos exemplos ou exercícios publicados em sala.</p>
+        </section>
+
+        <section id="contato" class="section-panel">
+            <h2>Futuras atualizações</h2>
             <ul>
-                <li>Use calçados fechados e adequados para caminhada.</li>
-                <li>Leve sua garrafa de água reutilizável (não geramos lixo na natureza).</li>
+                <li>Adicionar mais aulas de CSS e posicionamento.</li>
+                <li>Incluir estudos de caso para responsividade.</li>
+                <li>Enviar o projeto para deploy na Vercel com rota principal.</li>
             </ul>
-        </aside>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 EcoTrilhas Turismo LTDA. Desenvolvido para fins educacionais - SENAC São Paulo.</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 SENAC Web Design. Página principal do projeto de aulas.</p>
     </footer>
-
 </body>
 </html>
