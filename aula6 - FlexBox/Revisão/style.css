@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+header {
+    width: 100vw;
+    height: 20vh;
+    background-color: black;
+    position: relative;
+    clear: left;
+}
+
+nav {
+    width: 100vw;
+    height: 5vh;
+    background-color: darkblue;
+    position: relative;
+    clear: left;
+}
+
+#barraLateral {
+    width: 20vw;
+    height: 55vh;
+    background-color: gray;
+    position: relative;
+    float: left;
+}
+
+main {
+    width: 59vw;
+    height: 55vh;
+    background-color: pink;
+    position: relative;
+    float: left;
+    padding: 5px;
+}
+
+#headerMain {
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    position: relative;
+    clear: left;
+    margin: auto;
+}
+
+#principal {
+    width: 80%;
+    height: 28%;
+    background-color: orange;
+    position: relative;
+    clear: left;
+    margin: auto;
+    margin-top: 5px;
+}
+
+section {
+    width: 80%;
+    height: 28%;
+    background-color: purple;
+    position: relative;
+    clear: left;
+    margin: auto;
+    margin-top: 5px;
+}
+
+#mae{
+    width: 80%;
+    height: 30%;
+    background-color: blueviolet;
+    position: relative;
+    clear: left;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.card{
+    width: 30%;
+    height: 90%;
+    background-color: gray;
+    position: relative;
+    float: left;
+    margin: auto;
+    margin-left: 5px;
+}
+
+aside{
+    width: 20vw;
+    height: 55vh;
+    background-color: rgb(242, 0, 255);
+    position: relative;
+    float: left;
+}
+
+footer{
+    width: 100vw;
+    height: 20vh ;
+    background-color: black;
+    position: relative;
+    clear: left;
+}
