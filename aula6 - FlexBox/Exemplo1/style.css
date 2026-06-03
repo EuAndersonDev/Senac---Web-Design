@@ -1,0 +1,73 @@
+/* ==========================================
+   RESET E CONFIGURAÇÕES GLOBAIS (BOX MODEL)
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não quebrem o tamanho calculado */
+    border: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* ==========================================
+   FLEXBOX: ESTRUTURA DO CABEÇALHO (PAI)
+   ========================================== */
+.cabecalho-principal {
+    background-color: #1a1a2e;
+    padding: 1.25rem 2rem; /* Uso de rem para escalabilidade */
+    min-height: 80px;
+
+    /* 1. Ativa o modelo Flexbox neste elemento */
+    display: flex;
+
+    /* 2. Alinhamento no Eixo Principal (Horizontal):
+       space-between empurra o Logotipo para a extrema esquerda e o Menu para a extrema direita */
+    justify-content: space-between;
+
+    /* 3. Alinhamento no Eixo Cruzado (Vertical):
+       center garante que o texto do logo e os links fiquem perfeitamente alinhados no meio da altura */
+    align-items: center;
+}
+
+/* Estilização básica do Logotipo (Filho 1) */
+.logo h1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.logo h1 span {
+    color: #00adb5; /* Destaque visual */
+}
+
+/* ==========================================
+   FLEXBOX: ALINHAMENTO INTERNO DO MENU
+   ========================================== */
+.lista-menu {
+    list-style: none; /* Remove as bolinhas da lista nativa */
+
+    /* 1. Ativa o Flexbox na UL. Agora os 'li' (que eram blocos um abaixo do outro) 
+          ficam automaticamente dispostos lado a lado. */
+    display: flex;
+
+    /* 2. Cria um espaçamento moderno e uniforme entre os itens, 
+          eliminando a necessidade de margins manuais em cada elemento */
+    gap: 1.5rem;
+}
+
+/* Estilização dos Links de Navegação */
+.lista-menu a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Efeito de transição suave para interatividade */
+}
+
+/* Feedback Visual ao Passar o Mouse (Hover) */
+.lista-menu a:hover {
+    color: #00adb5;
+}
