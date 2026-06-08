@@ -1,0 +1,27 @@
+.container{
+    width: 80vw;
+    background-color: blanchedalmond;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.cards{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+/* Tablet */
+@media (max-width: 768px){
+    
+}
+
+/* Celular */
+@media (max-width: 480px){
+
+}
