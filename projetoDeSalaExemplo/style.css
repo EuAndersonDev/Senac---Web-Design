@@ -1,18 +1,19 @@
-*{
+* {
     margin: 0;
     bottom: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: poppins, sans-serif;
+    overflow-x: hidden;
 }
 
-header{
+header {
     display: flex;
     position: relative;
-    width: 90vw;
+    width: 100vw;
     height: 100px;
     justify-content: space-between;
     align-items: center;
@@ -20,15 +21,16 @@ header{
     margin: auto;
     border-radius: 15px;
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
-.logoHeader{
+.logoHeader {
     width: 50px;
     height: 50px;
     cursor: pointer;
 }
 
-nav{
+nav {
     display: flex;
     position: relative;
     width: 50%;
@@ -40,7 +42,7 @@ nav{
     flex-direction: column;
 }
 
-.navLinks{
+.navLinks {
     display: flex;
     position: relative;
     width: 100%;
@@ -50,13 +52,13 @@ nav{
     flex-direction: row;
 }
 
-.link{
+.link {
     text-decoration: none;
     color: black;
     font-size: 20px;
 }
 
-.sourceBar{
+.sourceBar {
     display: flex;
     position: relative;
     width: 100%;
@@ -67,16 +69,61 @@ nav{
     padding: 5px;
 }
 
-.navInput{
+.navInput {
     width: 80%;
     padding: 5px;
     border: 1px solid black;
     border-radius: 5px;
 }
 
-.hamburger{
+.hamburger {
     position: relative;
     width: 50px;
     height: 50px;
     cursor: pointer;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/projetoDeSalaExemplo/assets/bannerHero.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    padding: 30px;
+    align-items: start;
+    flex-direction: column;
+}
+
+.tituloHero {
+    color: white;
+    font-size: 96px;
+    font-weight: bold;
+}
+
+.botaoHero {
+    width: 280px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: #6F22D4;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    transform: translateX(1px) translateY(1px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaoHero:hover {
+    background-color: blueviolet;
+    opacity: 0.3;
+    transition: all ease-in-out 0.5s;
+    transform: translateX(-1px) translateY(-1px);
 }
