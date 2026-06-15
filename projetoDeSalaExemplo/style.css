@@ -12,22 +12,25 @@ body {
 
 header {
     display: flex;
-    position: relative;
+    position: fixed; /* 1. Define a posição fixa */
+    top: 0;          /* 2. Fixa o elemento no topo absoluto da tela */
+    left: 0;         /* 3. Garante que ele comece do canto esquerdo */
+    z-index: 1000;   /* 4. Faz o header ficar SEMPRE por cima dos outros elementos */
     width: 100vw;
     height: 100px;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    margin: auto;
-    border-radius: 15px;
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
     background-color: white;
+    padding-right: 20px;
 }
 
 .logoHeader {
     width: 50px;
     height: 50px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 nav {
@@ -81,6 +84,7 @@ nav {
     width: 50px;
     height: 50px;
     cursor: pointer;
+    padding-right: 50px;
 }
 
 .hero {
@@ -128,3 +132,31 @@ nav {
     transform: translateX(-1px) translateY(-1px);
 }
 
+.top{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#tituloTop10{
+    position: absolute;
+    font-size: 96px;
+    font-weight: bolder;
+    text-decoration: underline;
+    top: 840px;
+    left: 100px;
+    z-index: 100;
+}
+
+.top10{
+    position: relative;
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    background-color: aqua;
+}
