@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <script>
+        //for, while, do while, foreach
+
+        for(let i = 0; i < 10; i++){
+            document.write(i +"<br>");
+        }
+        
+
+
+        let compras = parseFloat(prompt("Quantos itens você comprou?"))
+        let valorF = 0;
+        for (let i = 0; i < compras; i++ ){
+            let valorItem = parseFloat(prompt("Digite o valor do Item"))
+            valorF += valorItem;
+        }
+        document.write("O valor total da compra foi: " + valorF)
+    </script>
+</body>
+</html>

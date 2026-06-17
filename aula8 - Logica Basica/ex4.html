@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <script>
+        let n1 = parseFloat(prompt("Digite um numero: "))
+        let n2 = parseFloat(prompt("Digite outro numero: "))
+        let n3 = parseFloat(prompt("Digite outro numero: "))
+        let n4 = parseFloat(prompt("Digite outro numero: "))
+
+        let media = (n1 + n2 + n3 + n4) / 4
+
+        document.write("A media é: " + media)
+
+        if (media >= 5){
+            document.write("RECUPERAÇÃO")
+        } else if(media >7){
+            document.write("APROVADO")
+        }else{
+            document.write("REPROVADO")
+        }
+        // >=, <=, <, >, ==, ===, &, or ou ||
+    </script>
+</body>
+</html>
