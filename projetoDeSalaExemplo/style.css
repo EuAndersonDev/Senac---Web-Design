@@ -414,3 +414,251 @@ footer{
     color: #ffffff;
     font-size: 24px;
 }
+
+/* --------------------------------------
+   Responsividade: Ícone hamburguer e breakpoints
+   Tablet: max-width 992px
+   Mobile: max-width 480px
+   -------------------------------------- */
+
+/* Mostrar apenas em telas pequenas */
+.hamburguer, .hamburger {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    header {
+        height: 80px;
+        padding: 0 16px;
+    }
+
+    .logoHeader {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 0;
+    }
+
+    nav {
+        width: 70%;
+        margin: 0;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navLinks {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .link {
+        font-size: 18px;
+    }
+
+    .sourceBar {
+        display: none;
+    }
+
+    .hamburguer, .hamburger {
+        display: block;
+    }
+
+    .hero {
+        height: 70vh;
+        padding: 20px;
+        background-position: center;
+    }
+
+    .tituloHero {
+        font-size: 56px;
+    }
+
+    .botaoHero {
+        width: 220px;
+        height: 56px;
+        font-size: 20px;
+    }
+
+    .secao-top {
+        padding: 0 20px;
+    }
+
+    .conteudo-top {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .ranking-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .cards-artistas {
+        flex-direction: row;
+        gap: 12px;
+        overflow-x: auto;
+        align-items: flex-start;
+    }
+
+    .card-autor {
+        max-width: 240px;
+        height: 100px;
+    }
+
+    .card-autor img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .citacao {
+        height: 280px;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textoCitacao h2 {
+        font-size: 32px;
+    }
+
+    .textoCitacao p {
+        font-size: 18px;
+    }
+
+    .estilos {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding: 20px 10px;
+        gap: 16px;
+    }
+
+    .estiloMusical {
+        width: 220px;
+        height: 320px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 18px;
+    }
+
+    .esquerda img{
+        width: 160px;
+        height: 160px;
+    }
+
+    .esquerda p{
+        font-size: 18px;
+    }
+
+    .centro a{
+        width: 180px;
+        height: 48px;
+        font-size: 18px;
+    }
+
+    .direita h2{
+        font-size: 28px;
+    }
+
+    .infoContato{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 70px;
+        padding: 0 12px;
+    }
+
+    .logoHeader {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav, .navLinks, .sourceBar {
+        display: none;
+    }
+
+    .hamburguer, .hamburger {
+        display: block;
+    }
+
+    .hero {
+        height: 60vh;
+        padding: 16px;
+    }
+
+    .tituloHero {
+        font-size: 36px;
+    }
+
+    .botaoHero {
+        width: 180px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .secao-top {
+        padding: 0 12px;
+    }
+
+    .conteudo-top {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .ranking-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .numero{
+        font-size: 28px;
+        width: 40px;
+    }
+
+    .titulo-musica{
+        font-size: 18px;
+    }
+
+    .artista-musica{
+        font-size: 14px;
+    }
+
+    .cards-artistas{
+        flex-direction: column;
+    }
+
+    .card-autor{
+        max-width: 100%;
+        height: 90px;
+    }
+
+    .card-autor img{
+        width: 90px;
+        height: 90px;
+    }
+
+    .citacao{
+        height: auto;
+        padding: 16px;
+    }
+
+    .textoCitacao h2{font-size:22px}
+    .textoCitacao p{font-size:16px}
+
+    .estilos{flex-direction:column;padding:12px}
+    .estiloMusical{width:100%;height:220px;border-radius:10px}
+
+    footer{padding:12px}
+    .esquerda img{width:140px;height:140px}
+    .esquerda p{font-size:16px}
+    .centro a{width:140px;height:44px;font-size:16px}
+    .direita h2{font-size:20px}
+    .infoContato{font-size:16px}
+}
